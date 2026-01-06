@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<input type="text" [(ngModel)]="number">
+<hr>
+<p *ngFor = "let item of itemslist">{{item.name}} : {{item.age}}</p>
+<button (click) = "view()">view</button>
+<hr>
+<app-child1 [namecase]="name" [num] = "number" (act)="get($event)" (data) ="set($event)" [users] = "userslist" (list) = "items($event)"></app-child1>

@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "cf45",
+      "name": "thanu",
+      "age": "23",
+      "email": "hek2h",
+      "city": "cghjk"
+    },
+    {
+      "id": "b057",
+      "name": "thawd",
+      "age": "234",
+      "email": "ghjk",
+      "city": "vbnm"
+    },
+    {
+      "id": "48df",
+      "name": "ghuio",
+      "age": "98",
+      "email": "bnm",
+      "city": "rtyu"
+    },
+    {
+      "id": "1037",
+      "name": "xcghj",
+      "age": "45678",
+      "email": "dfghjk",
+      "city": "dfghjk"
+    },
+    {
+      "id": "2c86",
+      "name": "ghjk",
+      "age": "234",
+      "email": "ghj",
+      "city": "vbn"
+    }
+  ],
+  "students": [
+    {
+      "id": "6b5d",
+      "name": "shyam",
+      "age": "12",
+      "class": "8",
+      "roll": "n1"
+    },
+    {
+      "id": "c3ca",
+      "name": "dhruv",
+      "age": "10",
+      "class": "7",
+      "roll": "n2"
+    },
+    {
+      "id": "d8f0",
+      "name": "",
+      "age": "",
+      "class": "",
+      "roll": ""
+    }
+  ]
+}

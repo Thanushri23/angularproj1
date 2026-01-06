@@ -1,0 +1,23 @@
+<p>api-employee-edit works!</p>
+<p>api-employees works!</p>
+<div  class="card d-flex " >
+    <p>NAME:</p>
+    <input type="text" [(ngModel)] = "name"> 
+    <p>DEPARTMENT: </p>
+    <input type="text"  [(ngModel)] = "department">
+    <p>skill: </p>
+    <input type="text" [(ngModel)] = "skill"> 
+    <p>project id: </p>
+    <input type="text" [(ngModel)] = "projId">
+    <p>project name: </p>
+    <input type="text" [(ngModel)] = "projname">
+    <p>role: </p>
+    <input type="text" [(ngModel)] = "role">
+    <p>city:</p>
+    <input type="text"  [(ngModel)] = "city"> 
+    <p>pincode:</p>
+    <input type="text" [(ngModel)] = "pin"> 
+    <div class="m-auto">
+        <button class="btn btn-success" (click) ="submit()">Submit</button>
+    </div>
+</div>

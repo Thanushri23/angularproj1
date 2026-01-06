@@ -1,0 +1,10 @@
+<p>fruits1 works!</p>
+
+<h1 *ngFor="let item of list">{{item}}</h1>
+<button (click) = "fruitservice.increase()">increment</button>
+<button (click) = "fruitservice.decrease()">decrement</button>
+<h1>{{fruitservice.getTotal()}}</h1>
+<app-fruits2></app-fruits2>
+<app-fruits3></app-fruits3>
+
+<app-parent></app-parent>

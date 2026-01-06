@@ -1,0 +1,42 @@
+<p>students works!</p>
+<input type="text" placeholder="name" [(ngModel)]="name">
+<input type="text" placeholder="age" [(ngModel)]="age">
+<input type="text" placeholder="class" [(ngModel)]="class">
+<input type="text" placeholder="roll" [(ngModel)]="roll">
+<button (click)="submit()" class="btn btn-success">submit</button>
+
+<h1>custom pipe</h1>
+<input type="text" [(ngModel)] = "search">
+
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>class</th>
+    <th>roll</th>
+    <th>action</th>
+</tr>
+<tr *ngFor="let u of list | pipe1:search">
+    <td>{{u.name| titlecase}}</td>
+    <td>{{u.age | uppercase}}</td>
+    <td>{{u.class| lowercase}}</td>
+    <td>{{u.roll}}</td>
+    <td><button class="btn btn-danger " (click)="del(u.id)">delete</button>
+    <button class="btn btn-primary " (click)="edit(u.id)">edit</button></td>
+</tr>
+</table>
+
+<h1>pipes date</h1>
+<h2>{{date| date: 'dd-MM-yy'}}</h2>
+<h2>{{date | date:'mm:HH:ss'}}</h2>
+
+<h1>pipes currency</h1>
+<h3>{{100|currency: 'INR'}}</h3>
+<h3>{{100|currency: 'USD'}}</h3>
+
+<h1>pipes Slice</h1>
+<h3>{{'hello'|slice: 0:2}}</h3>
+<h3>{{'i am not ok'|slice: 0:4}}</h3>
+
+<h1>custom pipe</h1>
+<input type="text" [(ngModel)] = "search">

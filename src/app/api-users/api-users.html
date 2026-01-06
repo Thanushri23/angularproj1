@@ -1,0 +1,14 @@
+<p>api-users works!</p>
+<div class="d-flex flex-wrap">
+<div *ngFor="let user of list.users" >
+    <div class="card d-flex flex-column" *ngIf="user.age >30" >
+    <h2>NAME: {{user.firstName}} {{user.lastName}}</h2>
+    <p>AGE: {{user.age}}</p>
+    <p>EMAIL: {{user.email}}</p>
+        <p>BLOOD GROUP: {{user.bloodGroup}}</p>
+
+    <p>ADDRESS: {{user.address.address}}, {{user.address.city}}</p>
+    <p>COMPANY NAME: {{user.company.name}}</p>
+    </div>
+</div>
+</div>

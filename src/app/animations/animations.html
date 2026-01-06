@@ -1,0 +1,15 @@
+<p>animations works!</p>
+<h1 [@fade] = " isAnimate ? 'fadein':'fadeout'">hoioii</h1>
+<button (click)="change()">click</button>
+<h2 [@zoom] = "state">Text</h2>
+<button (click)="toggle()">zoom</button>
+<h2 [@slidex] = 'xaxis'>x-axis</h2>
+<button (click)="slidex()">slide x-axis</button>
+<h2 [@slidey] = 'yaxis'>y-axis</h2>
+<button (click) = 'slidey()'>slide y-axis</button>
+<h2 [@expand] ='grow'>grow</h2>
+<button (click)="growsize()">grow</button>
+<h2 [@rotate] ='rot'>rotate</h2>
+<button (click)="rotate()">rotate</button>
+<h1 [@expandAnim] = " open ? 'closed':'open'">so much</h1>
+<button (click)="over()">click</button>

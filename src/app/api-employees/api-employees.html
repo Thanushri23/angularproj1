@@ -1,0 +1,12 @@
+<p>api-employees works!</p>
+<div class="d-flex flex-wrap">
+<div *ngFor="let employee of list"  class="card d-flex flex-column" >
+    <h2>NAME: {{employee.name}}</h2>
+    <p>{{employee.department}}</p>
+    <p>SKILL:</p>
+    <p *ngFor="let skill of employee.skills">{{skill}}</p>
+    <p>PROJECTS:</p>
+    <p *ngFor = "let pr of employee.projects">{{pr.projectName}}</p>
+    <p>ADDRESS: {{employee.address.city}}</p>
+</div>
+</div>

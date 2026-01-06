@@ -1,0 +1,74 @@
+<p>directives works!</p>
+
+<h1>NgIf</h1>
+<h1 *ngIf = "age >= 18">major</h1>
+<h2 *ngIf = "age < 18">minor</h2>
+
+<!-- new representation for ngIf -->
+
+@if(age1 >= 18){
+<h1>Adult</h1>
+}
+@if(age1 < 18){
+    <h2>minor</h2>
+}
+<!-- ----------------------------------------- -->
+<hr>
+<h1>NgFor</h1>
+<h2 appCDirective>Fruit List</h2>
+
+<h3 *ngFor = "let fruit of fruits">{{fruit}}</h3>
+
+<h1>user</h1>
+<h3 *ngFor = "let user of users">{{user.name}} - {{user.age}}</h3>
+
+
+<h1>NgSwitch</h1>
+
+<div [ngSwitch] ="age">
+    <h2 *ngSwitchCase = '10'>age is 10</h2>
+    <h2 *ngSwitchCase = '15'>age is 15</h2>
+    <h2 *ngSwitchDefault>age unknown</h2>
+</div>
+
+
+<select  [(ngModel)] = "color">
+    <option value="red" style = "background-color: red;">red</option>
+    <option value = "green" style = "background-color: green;">green</option>
+        <option value = "blue" style = "background-color: blue;">blue</option>
+
+            <option value = "yellow" style = "background-color: yellow;">yellow</option>
+
+</select>
+
+<div [ngSwitch] = "color">
+    <h2 *ngSwitchCase="'red'" style="color: red">you red</h2>
+        <h2 *ngSwitchCase="'green'" style="color: green">you green</h2>
+    <h2 *ngSwitchCase="'blue'" style="color:blue">you blue</h2>
+    <h2 *ngSwitchCase="'yellow'" style="color: yellow">you yellow</h2>
+
+</div>
+
+<h1>Attribute direcctive</h1>
+
+<button [ngStyle] ="{'background-color': color}">click me</button>
+<hr>
+<button [ngStyle] ="false? {'background-color': 'red'}: {'background-color': 'blue'}">click me</button>
+<h1 [ngClass] = "classname">text</h1>
+<h2 [ngClass] = "false? suclass : danclass">test</h2>
+
+<h1>custom directives</h1>
+<h2 appCDirective> custom</h2>
+
+<div appCDirective highlightcolor="lightgrey" class="card">
+    this is card 1
+</div><div appCDirective highlightcolor="red" class="card">
+    this is card 2
+</div><div appCDirective highlightcolor="yellow" class="card">
+    this is card 3
+</div><div appCDirective highlightcolor="lightblue" class="card">
+    this is card 4
+</div>
+
+<!-- template -->
+<h1 appCDirective #nice>template reference variable</h1>

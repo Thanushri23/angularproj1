@@ -1,0 +1,5 @@
+table {
+  /* This creates 15px space horizontally and 10px vertically */
+  border-spacing: 15px 10px;
+  border-collapse: separate; 
+}
